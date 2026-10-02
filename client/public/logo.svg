@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="url(#brandGrad)"/>
+  <path d="M18 16L32 48L46 16H38L32 32L26 16H18Z" fill="white"/>
+  <circle cx="48" cy="20" r="4" fill="#FACC15"/>
+  <text x="80" y="38" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-size="26" font-weight="900" letter-spacing="-0.5">VIETHAN</text>
+  <text x="206" y="38" fill="#22C55E" font-family="'Montserrat', sans-serif" font-size="26" font-weight="900" letter-spacing="-0.5">SPORTS</text>
+  <text x="82" y="52" fill="#9CA3AF" font-family="'Be Vietnam Pro', sans-serif" font-size="10" font-weight="500">TIÊU CHUẨN THI CÔNG HÀN QUỐC</text>
+  <defs>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#16A34A"/>
+    </linearGradient>
+  </defs>
+</svg>

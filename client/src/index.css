@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+/* ================================================
+   THEME TOKENS - Chỉnh màu tại đây!
+   ================================================ */
+@theme {
+  /* ---- Màu chủ đạo ---- */
+  --color-brand-green:       #16A34A;   /* xanh lá chính */
+  --color-brand-green-light: #22C55E;   /* xanh lá nhạt */
+  --color-brand-green-dark:  #15803D;   /* xanh lá đậm */
+  --color-brand-black:       #0B1410;   /* nền tối xanh đen */
+  --color-brand-dark:        #111B14;   /* nền tối phụ */
+  --color-brand-yellow:      #FACC15;   /* vàng chanh điểm nhấn */
+  --color-brand-orange:      #F97316;   /* cam điểm nhấn */
+  /* Gợi quốc kỳ Hàn (dùng chừng mực) */
+  --color-korea-blue:        #003478;
+  --color-korea-red:         #CD2E3A;
+
+  /* ---- Font ---- */
+  --font-heading: 'Montserrat', 'Poppins', sans-serif;
+  --font-body:    'Be Vietnam Pro', sans-serif;
+
+  /* ---- Border radius lớn ---- */
+  --radius-xl:  1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+/* ================================================
+   BASE STYLES
+   ================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ================================================
+   CUSTOM UTILITIES
+   ================================================ */
+
+/* Glassmorphism card */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-dark {
+  background: rgba(11, 20, 16, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+/* Gradient text xanh-vàng */
+.gradient-text {
+  background: linear-gradient(135deg, #22C55E 0%, #FACC15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow button */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2); }
+  50%       { box-shadow: 0 0 30px rgba(34, 197, 94, 0.7), 0 0 60px rgba(34, 197, 94, 0.35); }
+}
+
+/* Ken Burns zoom animation */
+@keyframes kenburns {
+  0%   { transform: scale(1)    translateX(0)    translateY(0); }
+  50%  { transform: scale(1.08) translateX(-1%)  translateY(-1%); }
+  100% { transform: scale(1.05) translateX(1%)   translateY(0.5%); }
+}
+
+.kenburns {
+  animation: kenburns 12s ease-in-out infinite alternate;
+}
+
+/* Counter số liệu */
+.counter-number {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  background: linear-gradient(135deg, #22C55E, #FACC15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Vạch kẻ sân SVG animation */
+@keyframes draw-line {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+
+.field-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-line 3s ease-out forwards;
+}
+
+/* Loading skeleton */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Typewriter cursor */
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  background: #22C55E;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Scroll indicator arrow */
+@keyframes bounce-arrow {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+
+.scroll-arrow {
+  animation: bounce-arrow 1.5s ease-in-out infinite;
+}
+
+/* Section divider sóng */
+.wave-divider svg {
+  display: block;
+}
+
+/* Sticky navbar transition */
+.navbar-scrolled {
+  background: rgba(11, 20, 16, 0.9) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: #0B1410; }
+::-webkit-scrollbar-thumb  { background: #16A34A; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #22C55E; }
+
+/* Zalo/Phone float button pulse */
+@keyframes float-pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.1); }
+}
+
+.float-btn { animation: float-pulse 2s ease-in-out infinite; }
+
+/* Image overlay gradient */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 20, 16, 0.3) 0%,
+    rgba(11, 20, 16, 0.5) 40%,
+    rgba(11, 20, 16, 0.75) 100%
+  );
+}
