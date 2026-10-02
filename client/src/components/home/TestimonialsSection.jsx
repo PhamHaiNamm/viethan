@@ -1,24 +1,24 @@
 /**
  * components/home/TestimonialsSection.jsx
- * Carousel cảm nhận khách hàng – tự chạy, có dot indicators
+ * Carousel cảm nhận khách hàng – Card kính nổi trên nền tối, khoảng cách rộng rãi
  */
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useQuery } from '@tanstack/react-query';
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, Quote, Sparkles } from 'lucide-react';
 import { publicApi } from '../../services/api';
 
 const FALLBACK = [
-  { _id:'1', name:'Anh Nguyễn Văn Hùng',  role:'Chủ đầu tư – Trung tâm TT Hòa Bình',   rating:5, content:'VietHan Sports thi công đúng tiến độ, chất lượng cỏ rất tốt, sau 1 năm vẫn như mới. Đội thợ chuyên nghiệp, làm việc cẩn thận. Rất hài lòng!', avatar:'https://randomuser.me/api/portraits/men/32.jpg' },
-  { _id:'2', name:'Chị Trần Thị Mai',      role:'Giám đốc – Bãi Cháy Marina Resort',     rating:5, content:'Cụm sân pickleball được khách rất ưa thích. Mặt sân đẹp, êm, không trượt. Công trình bàn giao trước hạn 3 ngày – điều rất hiếm thấy!', avatar:'https://randomuser.me/api/portraits/women/44.jpg' },
-  { _id:'3', name:'Ông Phạm Đức Thanh',    role:'Phó Hiệu trưởng – THPT Hạ Long',        rating:5, content:'Tư vấn tận tâm, báo giá minh bạch không phát sinh. Sân hoàn thành dịp hè, kịp đưa vào sử dụng đầu năm học. Học sinh rất thích!', avatar:'https://randomuser.me/api/portraits/men/55.jpg' },
-  { _id:'4', name:'Anh Lê Minh Quân',      role:'Ban Quản lý – Vinhomes Star Hạ Long',    rating:5, content:'Thái độ chuyên nghiệp, vật liệu chính hãng có kiểm định rõ ràng. Sân hoàn thành đúng thiết kế 3D đã duyệt. Rất đáng tiền!', avatar:'https://randomuser.me/api/portraits/men/67.jpg' },
+  { _id:'1', name:'Anh Nguyễn Văn Hùng',  role:'Chủ đầu tư – Trung tâm TT Hòa Bình',   rating:5, content:'VietHan Sports thi công đúng tiến độ cam kết. Mặt cỏ 5G Hàn Quốc sau 1 mùa mưa bão tại Quảng Ninh vẫn đứng thẳng và êm ái như mới. Đội ngũ kỹ sư trực tiếp giám sát rất cẩn thận!', avatar:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80' },
+  { _id:'2', name:'Chị Trần Thị Mai',      role:'Giám đốc Điều hành – Bãi Cháy Marina',  rating:5, content:'Cụm 4 sân pickleball ngoài trời đưa vào khai thác rất đông khách. Mặt sân bám giày, không trơn trượt sau mưa. Đặc biệt công trình bàn giao trước thời hạn 3 ngày!', avatar:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80' },
+  { _id:'3', name:'Ông Phạm Đức Thanh',    role:'Hiệu phó – Trường THPT Hạ Long',       rating:5, content:'Báo giá và hợp đồng minh bạch 100%, không phát sinh bất kỳ khoản nào. Sân bóng hoàn thiện dịp hè kịp cho các em học sinh bước vào năm học mới. Rất hài lòng về sự uy tín!', avatar:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80' },
+  { _id:'4', name:'Anh Lê Minh Quân',      role:'Ban Quản lý – KĐT Vinhomes Hạ Long',    rating:5, content:'Hệ thống chiếu sáng đèn LED thấu kính chống chói hoạt động rất tốt, không làm lóa mắt cư dân khi chơi ban đêm. Bảo hành hỗ trợ bảo dưỡng định kỳ rất chu đáo.', avatar:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80' },
 ];
 
 const StarRating = ({ rating }) => (
-  <div className="flex gap-0.5">
+  <div className="flex gap-1">
     {Array.from({ length: 5 }).map((_, i) => (
-      <Star key={i} size={14} className={i < rating ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'} />
+      <Star key={i} size={18} className={i < rating ? 'fill-yellow-400 text-yellow-400' : 'text-gray-600'} />
     ))}
   </div>
 );
@@ -35,96 +35,123 @@ export default function TestimonialsSection() {
 
   const items = data?.data?.data?.length ? data.data.data : FALLBACK;
 
-  // Tự chạy
   useEffect(() => {
-    intervalRef.current = setInterval(() => setIdx((p) => (p + 1) % items.length), 4500);
+    intervalRef.current = setInterval(() => setIdx((p) => (p + 1) % items.length), 5500);
     return () => clearInterval(intervalRef.current);
   }, [items.length]);
 
   const go = (i) => {
     clearInterval(intervalRef.current);
     setIdx(i);
-    intervalRef.current = setInterval(() => setIdx((p) => (p + 1) % items.length), 4500);
+    intervalRef.current = setInterval(() => setIdx((p) => (p + 1) % items.length), 5500);
   };
+
+  const handlePrev = () => go((idx - 1 + items.length) % items.length);
+  const handleNext = () => go((idx + 1) % items.length);
 
   const current = items[idx];
 
   return (
-    <section className="py-20 lg:py-28 bg-[#0B1410] relative overflow-hidden">
-      {/* Trang trí */}
-      <div className="absolute top-10 right-10 text-green-900/20 pointer-events-none">
-        <Quote size={200} />
+    <section className="py-28 lg:py-36 bg-[#080E0B] relative overflow-hidden text-white">
+      {/* Biểu tượng quote chìm nghệ thuật */}
+      <div className="absolute top-12 right-12 text-white/[0.03] pointer-events-none">
+        <Quote size={280} />
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-16 lg:mb-20"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-900/40 text-green-400 text-sm font-semibold mb-4 border border-green-800/50">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-            Khách hàng nói gì về chúng tôi?
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-900/40 text-green-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 border border-green-700/50 shadow-sm">
+            <Sparkles size={14} />
+            Đánh giá từ khách hàng
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            Cảm nhận từ <span className="gradient-text">khách hàng</span>
+
+          <h2
+            className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight"
+            style={{ fontFamily: 'Montserrat, sans-serif' }}
+          >
+            Chủ đầu tư nói gì về <span className="gradient-text">VietHan Sports</span>
           </h2>
         </motion.div>
 
-        {/* Card */}
-        <div className="relative min-h-[280px]">
+        {/* Carousel Card */}
+        <div className="relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -24 }}
-              transition={{ duration: 0.45 }}
-              className="glass-dark rounded-3xl p-8 sm:p-10"
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="rounded-3xl p-8 sm:p-14 lg:p-16 bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-white/10 shadow-2xl backdrop-blur-2xl relative"
             >
-              <Quote size={36} className="text-[#22C55E]/30 mb-4" />
-              <p className="text-gray-200 text-lg sm:text-xl leading-relaxed mb-8 italic">
+              <div className="mb-6">
+                <StarRating rating={current?.rating || 5} />
+              </div>
+
+              <blockquote className="text-lg sm:text-2xl text-gray-200 leading-relaxed font-normal italic mb-10">
                 "{current?.content}"
-              </p>
-              <div className="flex items-center gap-4">
+              </blockquote>
+
+              <div className="flex items-center gap-4 pt-6 border-t border-white/10">
                 <img
-                  src={current?.avatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(current?.name)}&background=16a34a&color=fff`}
+                  src={current?.avatar}
                   alt={current?.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-[#22C55E]/40"
-                  loading="lazy"
+                  className="w-14 h-14 rounded-full object-cover border-2 border-green-500 shadow-md shrink-0"
                 />
                 <div>
-                  <div className="font-bold text-white text-sm">{current?.name}</div>
-                  <div className="text-gray-400 text-xs mt-0.5">{current?.role}</div>
-                  <StarRating rating={current?.rating ?? 5} />
+                  <div className="font-black text-white text-base sm:text-lg" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    {current?.name}
+                  </div>
+                  <div className="text-xs sm:text-sm text-green-400 font-semibold mt-0.5">
+                    {current?.role}
+                  </div>
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
+
+          {/* Nút Prev / Next */}
+          <div className="flex items-center justify-between mt-8">
+            <div className="flex gap-2">
+              {items.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => go(i)}
+                  className={`h-2.5 rounded-full transition-all ${
+                    i === idx ? 'w-10 bg-green-500 shadow-md shadow-green-500/50' : 'w-2.5 bg-white/20 hover:bg-white/40'
+                  }`}
+                  aria-label={`Slide ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            <div className="flex gap-3">
+              <button
+                onClick={handlePrev}
+                className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 hover:bg-[#16A34A] text-white flex items-center justify-center transition-all shadow-sm"
+                aria-label="Trước"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={handleNext}
+                className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 hover:bg-[#16A34A] text-white flex items-center justify-center transition-all shadow-sm"
+                aria-label="Tiếp"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
         </div>
 
-        {/* Controls */}
-        <div className="flex items-center justify-center gap-4 mt-8">
-          <button onClick={() => go((idx - 1 + items.length) % items.length)} className="w-10 h-10 rounded-full glass border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
-            <ChevronLeft size={18} />
-          </button>
-          <div className="flex gap-2">
-            {items.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => go(i)}
-                className={`h-2 rounded-full transition-all duration-300 ${i === idx ? 'w-8 bg-[#22C55E]' : 'w-2 bg-white/20 hover:bg-white/40'}`}
-                aria-label={`Cảm nhận ${i + 1}`}
-              />
-            ))}
-          </div>
-          <button onClick={() => go((idx + 1) % items.length)} className="w-10 h-10 rounded-full glass border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
-            <ChevronRight size={18} />
-          </button>
-        </div>
       </div>
     </section>
   );
