@@ -66,11 +66,11 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-5">
             <Link to="/" className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl overflow-hidden bg-white flex items-center justify-center p-0.5 shadow-lg">
-                <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
+                <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="font-black text-white text-xl tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                  VietHan<span className="text-[#22C55E]">Sports</span>
+                  Việt – <span className="text-[#22C55E]">Hàn</span>
                 </div>
                 <div className="text-[11px] text-gray-400 mt-1">Việt – Hàn • Chuẩn FIFA Quốc Tế</div>
               </div>
@@ -203,7 +203,7 @@ export default function Footer() {
       {/* ===== BOTTOM BAR ===== */}
       <div className="border-t border-white/5 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} VietHan Sports. Kiến tạo sân chơi – Nâng tầm thể thao.</p>
+          <p>© {new Date().getFullYear()} Công ty Việt – Hàn. Kiến tạo sân chơi – Nâng tầm thể thao.</p>
           <div className="flex items-center gap-6">
             <span>GPKD: 5701234567 cấp bởi Sở KH&ĐT Quảng Ninh</span>
             <Link to="/admin/login" className="hover:text-green-400 transition-colors">

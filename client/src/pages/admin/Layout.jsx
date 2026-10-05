@@ -35,11 +35,11 @@ export default function AdminLayout() {
         {/* Logo */}
         <div className="h-16 flex items-center gap-2 px-4 border-b border-white/5">
           <div className="w-8 h-8 rounded-lg overflow-hidden bg-white flex items-center justify-center p-0.5 shrink-0 shadow-sm">
-            <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
+            <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
           </div>
           {sidebarOpen && (
             <span className="font-black text-white text-sm" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              VietHan<span className="text-[#22C55E]">Admin</span>
+              Việt – Hàn <span className="text-[#22C55E]">Admin</span>
             </span>
           )}
           <button

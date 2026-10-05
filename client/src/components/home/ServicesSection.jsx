@@ -63,7 +63,7 @@ export default function ServicesSection() {
           </h2>
 
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-            Từ bước tư vấn đầu tiên đến lúc bàn giao và bảo trì – VietHan Sports luôn đồng hành cùng quý khách ở mọi giai đoạn với kỷ luật thi công cao nhất.
+            Từ bước tư vấn đầu tiên đến lúc bàn giao và bảo trì – Công ty Việt – Hàn luôn đồng hành cùng quý khách ở mọi giai đoạn với kỷ luật thi công cao nhất.
           </p>
         </motion.div>
 

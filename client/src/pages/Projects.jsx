@@ -54,10 +54,10 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>Dự Án Đã Thi Công – VietHan Sports | 100+ Công Trình</title>
+        <title>Dự Án Đã Thi Công – Việt – Hàn | 100+ Công Trình</title>
         <meta
           name="description"
-          content="Khám phá các công trình sân bóng đá cỏ nhân tạo, cụm sân pickleball, sân tennis chất lượng cao do VietHan Sports thi công tại Hạ Long, Cẩm Phả, Quảng Ninh."
+          content="Khám phá các công trình sân bóng đá cỏ nhân tạo, cụm sân pickleball, sân tennis chất lượng cao do Công ty Việt – Hàn thi công tại Hạ Long, Cẩm Phả, Quảng Ninh."
         />
       </Helmet>
 

@@ -9,7 +9,7 @@ import { Star, ChevronLeft, ChevronRight, Quote, Sparkles } from 'lucide-react';
 import { publicApi } from '../../services/api';
 
 const FALLBACK = [
-  { _id:'1', name:'Anh Nguyễn Văn Hùng',  role:'Chủ đầu tư – Trung tâm TT Hòa Bình',   rating:5, content:'VietHan Sports thi công đúng tiến độ cam kết. Mặt cỏ 5G Hàn Quốc sau 1 mùa mưa bão tại Quảng Ninh vẫn đứng thẳng và êm ái như mới. Đội ngũ kỹ sư trực tiếp giám sát rất cẩn thận!', avatar:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80' },
+  { _id:'1', name:'Anh Nguyễn Văn Hùng',  role:'Chủ đầu tư – Trung tâm TT Hòa Bình',   rating:5, content:'Việt – Hàn thi công đúng tiến độ cam kết. Mặt cỏ 5G Hàn Quốc sau 1 mùa mưa bão tại Quảng Ninh vẫn đứng thẳng và êm ái như mới. Đội ngũ kỹ sư trực tiếp giám sát rất cẩn thận!', avatar:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80' },
   { _id:'2', name:'Chị Trần Thị Mai',      role:'Giám đốc Điều hành – Bãi Cháy Marina',  rating:5, content:'Cụm 4 sân pickleball ngoài trời đưa vào khai thác rất đông khách. Mặt sân bám giày, không trơn trượt sau mưa. Đặc biệt công trình bàn giao trước thời hạn 3 ngày!', avatar:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80' },
   { _id:'3', name:'Ông Phạm Đức Thanh',    role:'Hiệu phó – Trường THPT Hạ Long',       rating:5, content:'Báo giá và hợp đồng minh bạch 100%, không phát sinh bất kỳ khoản nào. Sân bóng hoàn thiện dịp hè kịp cho các em học sinh bước vào năm học mới. Rất hài lòng về sự uy tín!', avatar:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80' },
   { _id:'4', name:'Anh Lê Minh Quân',      role:'Ban Quản lý – KĐT Vinhomes Hạ Long',    rating:5, content:'Hệ thống chiếu sáng đèn LED thấu kính chống chói hoạt động rất tốt, không làm lóa mắt cư dân khi chơi ban đêm. Bảo hành hỗ trợ bảo dưỡng định kỳ rất chu đáo.', avatar:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80' },
@@ -77,7 +77,7 @@ export default function TestimonialsSection() {
             className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            Chủ đầu tư nói gì về <span className="gradient-text">VietHan Sports</span>
+            Chủ đầu tư nói gì về <span className="gradient-text">Việt – Hàn</span>
           </h2>
         </motion.div>
 

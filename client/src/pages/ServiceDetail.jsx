@@ -104,7 +104,7 @@ export default function ServiceDetail() {
   return (
     <>
       <Helmet>
-        <title>{svc.metaTitle || `${svc.title} – VietHan Sports`}</title>
+        <title>{svc.metaTitle || `${svc.title} – Việt – Hàn`}</title>
         <meta name="description" content={svc.metaDescription || svc.summary} />
       </Helmet>
 
@@ -160,7 +160,7 @@ export default function ServiceDetail() {
                   />
                 ) : (
                   <p className="text-gray-600 leading-relaxed text-base">
-                    Với phương châm <em>"Kiến tạo sân chơi – Nâng tầm thể thao"</em>, dịch vụ <strong>{svc.title}</strong> của VietHan Sports được thực hiện dưới sự kiểm soát chặt chẽ của các kỹ sư Việt Nam và chuyên gia Hàn Quốc. Chúng tôi cam kết đem lại công trình có độ bền vượt trội, khả năng chống chịu điều kiện thời tiết khắc nghiệt tại Quảng Ninh và tối ưu chi phí đầu tư dài hạn.
+                    Với phương châm <em>"Kiến tạo sân chơi – Nâng tầm thể thao"</em>, dịch vụ <strong>{svc.title}</strong> của Công ty Việt – Hàn được thực hiện dưới sự kiểm soát chặt chẽ của các kỹ sư Việt Nam và chuyên gia Hàn Quốc. Chúng tôi cam kết đem lại công trình có độ bền vượt trội, khả năng chống chịu điều kiện thời tiết khắc nghiệt tại Quảng Ninh và tối ưu chi phí đầu tư dài hạn.
                   </p>
                 )}
               </div>

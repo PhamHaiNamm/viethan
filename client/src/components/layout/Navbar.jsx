@@ -78,11 +78,11 @@ export default function Navbar() {
           {/* ===== LOGO ===== */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden bg-white flex items-center justify-center p-0.5 shadow-lg shadow-green-500/20 group-hover:scale-105 transition-all">
-              <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
+              <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
             </div>
             <div>
               <div className="font-black text-white text-xl sm:text-2xl tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                VietHan<span className="text-[#22C55E]">Sports</span>
+                Việt – <span className="text-[#22C55E]">Hàn</span>
               </div>
               <div className="text-[10px] sm:text-xs text-green-400 font-semibold tracking-wider uppercase mt-1 flex items-center gap-1.5">
                 <span>🇰🇷 Chuẩn Hàn Quốc</span>

@@ -39,10 +39,10 @@ export default function AdminLogin() {
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="w-20 h-20 rounded-3xl overflow-hidden bg-white flex items-center justify-center p-1 mx-auto mb-4 shadow-xl border border-white/20">
-            <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
+            <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-2xl font-black text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            VietHan<span className="text-[#22C55E]">Sports</span>
+            Việt – <span className="text-[#22C55E]">Hàn</span>
           </h1>
           <p className="text-gray-400 text-sm mt-1">Trang quản trị nội dung</p>
         </div>
@@ -58,7 +58,7 @@ export default function AdminLogin() {
                   type="email"
                   value={form.email}
                   onChange={(e) => setForm(p => ({ ...p, email: e.target.value }))}
-                  placeholder="admin@viethansports.vn"
+                  placeholder="admin@viethan.vn"
                   className="w-full pl-10 pr-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-gray-600 focus:outline-none focus:border-[#22C55E]/50 focus:bg-white/8 transition-all"
                 />
               </div>
@@ -87,7 +87,7 @@ export default function AdminLogin() {
             </button>
           </form>
         </div>
-        <p className="text-center text-gray-600 text-xs mt-6">© {new Date().getFullYear()} VietHan Sports</p>
+        <p className="text-center text-gray-600 text-xs mt-6">© {new Date().getFullYear()} Công ty Việt – Hàn</p>
       </motion.div>
     </div>
   );

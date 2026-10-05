@@ -58,10 +58,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Liên Hệ & Báo Giá Thi Công – VietHan Sports Hạ Long</title>
+        <title>Liên Hệ & Báo Giá Thi Công – Việt – Hàn Hạ Long</title>
         <meta
           name="description"
-          content="Liên hệ tư vấn, khảo sát thực địa miễn phí và nhận báo giá thi công sân bóng đá cỏ nhân tạo, pickleball, tennis của VietHan Sports tại Hạ Long, Quảng Ninh. Hotline 24/7."
+          content="Liên hệ tư vấn, khảo sát thực địa miễn phí và nhận báo giá thi công sân bóng đá cỏ nhân tạo, pickleball, tennis của Công ty Việt – Hàn tại Hạ Long, Quảng Ninh. Hotline 24/7."
         />
       </Helmet>
 
@@ -85,7 +85,7 @@ export default function Contact() {
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Đội ngũ chuyên gia VietHan Sports sẵn sàng có mặt khảo sát thực địa tại Hạ Long, Cẩm Phả, Uông Bí và toàn tỉnh Quảng Ninh trong 24 giờ.
+              Đội ngũ chuyên gia Việt – Hàn sẵn sàng có mặt khảo sát thực địa tại Hạ Long, Cẩm Phả, Uông Bí và toàn tỉnh Quảng Ninh trong 24 giờ.
             </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function Contact() {
               <div>
                 <span className="text-xs font-bold text-[#16A34A] uppercase tracking-widest block mb-2">Trụ sở chính</span>
                 <h2 className="text-3xl font-black text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                  VietHan Sports tại Hạ Long, Quảng Ninh
+                  Công ty Việt – Hàn tại Hạ Long, Quảng Ninh
                 </h2>
 
                 <div className="space-y-4">
@@ -131,7 +131,7 @@ export default function Contact() {
               {/* Nhúng Google Maps Hạ Long */}
               <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200 h-80 relative">
                 <iframe
-                  title="VietHan Sports – Hạ Long, Quảng Ninh"
+                  title="Công ty Việt – Hàn – Hạ Long, Quảng Ninh"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59597.41!2d107.04!3d20.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a5816c31f1e99%3A0xd03d2e0a764a65d0!2zSOG6oSBMb25n!5e0!3m2!1svi!2svn!4v1234567890!5m2!1svi!2svn"
                   width="100%"
                   height="100%"
@@ -154,7 +154,7 @@ export default function Contact() {
                     Yêu cầu đã được tiếp nhận!
                   </h3>
                   <p className="text-gray-600 mb-8 max-w-sm mx-auto text-sm leading-relaxed">
-                    Kỹ sư trưởng VietHan Sports sẽ gọi lại trong 2 giờ để tư vấn chi tiết và gửi bản vẽ phối cảnh sơ bộ.
+                    Kỹ sư trưởng Việt – Hàn sẽ gọi lại trong 2 giờ để tư vấn chi tiết và gửi bản vẽ phối cảnh sơ bộ.
                   </p>
                   <button
                     onClick={() => setSuccess(false)}

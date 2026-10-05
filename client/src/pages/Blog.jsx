@@ -52,7 +52,7 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>Tin Tức & Cẩm Nang Sân Thể Thao – VietHan Sports</title>
+        <title>Tin Tức & Cẩm Nang Sân Thể Thao – Việt – Hàn</title>
         <meta
           name="description"
           content="Chia sẻ kinh nghiệm đầu tư sân bóng đá, quy trình thi công sân pickleball, cách bảo dưỡng cỏ nhân tạo và báo giá mới nhất tại Quảng Ninh."

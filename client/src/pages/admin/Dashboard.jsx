@@ -90,7 +90,7 @@ export default function AdminDashboard() {
       <div className="bg-[#0B1410] text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 border border-green-500/20 shadow-xl">
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-900/40 text-green-400 text-xs font-bold mb-3 border border-green-700/50">
-            <Sparkles size={14} /> Hệ Thống Quản Trị VietHan Sports
+            <Sparkles size={14} /> Hệ Thống Quản Trị Việt – Hàn
           </div>
           <h1 className="text-2xl sm:text-3xl font-black" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Bảng điều khiển quản trị

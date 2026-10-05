@@ -81,7 +81,7 @@ export default function ProjectDetail() {
   return (
     <>
       <Helmet>
-        <title>{project.metaTitle || `${project.title} – VietHan Sports`}</title>
+        <title>{project.metaTitle || `${project.title} – Việt – Hàn`}</title>
         <meta name="description" content={project.metaDescription || project.description} />
       </Helmet>
 
@@ -269,7 +269,7 @@ export default function ProjectDetail() {
                 ) : (
                   <div className="space-y-4 text-gray-600 text-base leading-relaxed">
                     <p>
-                      Công trình <strong>{project.title}</strong> được VietHan Sports triển khai đáp ứng trọn vẹn các yêu cầu khắt khe của chủ đầu tư về tính thẩm mỹ, độ phẳng nền và khả năng chịu tải trọng khai thác mật độ cao.
+                      Công trình <strong>{project.title}</strong> được Công ty Việt – Hàn triển khai đáp ứng trọn vẹn các yêu cầu khắt khe của chủ đầu tư về tính thẩm mỹ, độ phẳng nền và khả năng chịu tải trọng khai thác mật độ cao.
                     </p>
                     <p>
                       Đội ngũ kỹ thuật đã xử lý nền móng lu lèn kỹ lưỡng, áp dụng hệ thống rãnh thoát nước ngầm chống ứ đọng nước cục bộ vào mùa mưa tại Quảng Ninh. Mặt sân sử dụng vật liệu nhập khẩu trực tiếp từ Hàn Quốc, đem đến trải nghiệm thi đấu chuyên nghiệp và an toàn cho người chơi.
@@ -319,7 +319,7 @@ export default function ProjectDetail() {
                   Muốn làm sân tương tự?
                 </h4>
                 <p className="text-xs text-gray-400 mb-6 leading-relaxed">
-                  VietHan Sports hỗ trợ lập dự toán và thiết kế phối cảnh 3D miễn phí cho mô hình sân của bạn.
+                  Việt – Hàn hỗ trợ lập dự toán và thiết kế phối cảnh 3D miễn phí cho mô hình sân của bạn.
                 </p>
                 <Link
                   to="/lien-he"

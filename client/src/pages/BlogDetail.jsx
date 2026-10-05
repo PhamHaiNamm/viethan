@@ -59,7 +59,7 @@ export default function BlogDetail() {
   return (
     <>
       <Helmet>
-        <title>{post.metaTitle || `${post.title} – VietHan Sports`}</title>
+        <title>{post.metaTitle || `${post.title} – Việt – Hàn`}</title>
         <meta name="description" content={post.metaDescription || post.excerpt} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
@@ -97,7 +97,7 @@ export default function BlogDetail() {
 
               <span className="flex items-center gap-2">
                 <UserCheck size={15} className="text-[#22C55E]" />
-                Tác giả: <strong className="text-white">{post.authorName || 'Ban Chuyên Môn VietHan'}</strong>
+                Tác giả: <strong className="text-white">{post.authorName || 'Ban Chuyên Môn Việt – Hàn'}</strong>
               </span>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function BlogDetail() {
                 Cần chuyên gia giải đáp trực tiếp cho công trình của bạn?
               </h3>
               <p className="text-gray-400 text-xs sm:text-sm">
-                Đội ngũ kỹ sư VietHan Sports sẵn sàng giải đáp kỹ thuật và khảo sát hiện trường miễn phí.
+                Đội ngũ kỹ sư Việt – Hàn sẵn sàng giải đáp kỹ thuật và khảo sát hiện trường miễn phí.
               </p>
             </div>
             <Link

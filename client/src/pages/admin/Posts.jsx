@@ -15,7 +15,7 @@ const EMPTY_POST = {
   content: '',
   thumbnail: '',
   tags: '',
-  authorName: 'VietHan Sports',
+  authorName: 'Việt – Hàn',
   isPublished: true,
 };
 
@@ -85,7 +85,7 @@ export default function AdminPosts() {
       content: post.content || '',
       thumbnail: post.thumbnail || '',
       tags: Array.isArray(post.tags) ? post.tags.join(', ') : (post.tags || ''),
-      authorName: post.authorName || 'VietHan Sports',
+      authorName: post.authorName || 'Việt – Hàn',
       isPublished: post.isPublished ?? true,
     });
     setEditingId(post._id);
@@ -231,7 +231,7 @@ export default function AdminPosts() {
                   </label>
                   <input
                     type="text"
-                    placeholder="VietHan Sports"
+                    placeholder="Việt – Hàn"
                     value={formData.authorName}
                     onChange={(e) => setFormData((p) => ({ ...p, authorName: e.target.value }))}
                     className={inp}

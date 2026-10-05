@@ -72,10 +72,10 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>Về chúng tôi – VietHan Sports | Chuẩn Thi Công Hàn Quốc</title>
+        <title>Về chúng tôi – Việt – Hàn | Chuẩn Thi Công Hàn Quốc</title>
         <meta 
           name="description" 
-          content="Tìm hiểu VietHan Sports – Đơn vị tiên phong thi công sân thể thao chuẩn Hàn Quốc tại Hạ Long, Quảng Ninh. Đội ngũ chuyên gia Hàn-Việt, bảo hành 5 năm." 
+          content="Tìm hiểu Công ty Việt – Hàn – Đơn vị tiên phong thi công sân thể thao chuẩn Hàn Quốc tại Hạ Long, Quảng Ninh. Đội ngũ chuyên gia Hàn-Việt, bảo hành 5 năm." 
         />
       </Helmet>
 
@@ -134,7 +134,7 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed text-base">
                 <p>
-                  Được thành lập từ mối quan hệ hợp tác chiến lược giữa các chuyên gia cơ sở vật chất thể thao Seoul (Hàn Quốc) và đội ngũ kỹ sư xây dựng dày dặn kinh nghiệm tại Quảng Ninh, <strong className="text-gray-900">VietHan Sports</strong> ra đời nhằm giải quyết bài toán nhức nhối: <em className="text-[#16A34A]">sân thể thao xuống cấp nhanh sau 1-2 mùa mưa bão miền biển.</em>
+                  Được thành lập từ mối quan hệ hợp tác chiến lược giữa các chuyên gia cơ sở vật chất thể thao Seoul (Hàn Quốc) và đội ngũ kỹ sư xây dựng dày dặn kinh nghiệm tại Quảng Ninh, <strong className="text-gray-900">Công ty Việt – Hàn</strong> ra đời nhằm giải quyết bài toán nhức nhối: <em className="text-[#16A34A]">sân thể thao xuống cấp nhanh sau 1-2 mùa mưa bão miền biển.</em>
                 </p>
                 <p>
                   Chúng tôi nhận thấy khí hậu nhiệt đới ẩm gió mùa, độ mặn cao gần biển tại Hạ Long và Quảng Ninh đòi hỏi quy chuẩn thoát nước nền hạ và độ kháng tia cực tím (UV) của sợi cỏ nhân tạo, sơn sân Acrylic phải cao gấp 2 lần bình thường.
@@ -171,7 +171,7 @@ export default function About() {
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1624880357913-a8539238245b?w=800&q=80"
-                  alt="Dự án sân thể thao VietHan Sports"
+                  alt="Dự án sân thể thao Việt – Hàn"
                   className="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -347,7 +347,7 @@ export default function About() {
               Bạn đang tìm đối tác thi công sân thể thao uy tín?
             </h2>
             <p className="text-green-100 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
-              Đội ngũ kỹ sư VietHan Sports sẵn sàng có mặt khảo sát thực địa miễn phí tại Hạ Long, Cẩm Phả, Uông Bí và toàn tỉnh Quảng Ninh trong 24 giờ.
+              Đội ngũ kỹ sư Việt – Hàn sẵn sàng có mặt khảo sát thực địa miễn phí tại Hạ Long, Cẩm Phả, Uông Bí và toàn tỉnh Quảng Ninh trong 24 giờ.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

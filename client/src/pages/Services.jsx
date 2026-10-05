@@ -53,15 +53,15 @@ const FAQS = [
   },
   {
     q: 'Thời gian thi công một cụm sân thể thao hoàn chỉnh mất bao lâu?',
-    a: 'Đối với sân bóng đá hoặc cụm 2-4 sân pickleball, thời gian từ lúc khởi công xử lý nền móng đến khi bàn giao đưa vào khai thác thường từ 20 đến 30 ngày (nếu thời tiết thuận lợi). VietHan Sports có điều khoản bồi thường nếu chậm tiến độ cam kết.',
+    a: 'Đối với sân bóng đá hoặc cụm 2-4 sân pickleball, thời gian từ lúc khởi công xử lý nền móng đến khi bàn giao đưa vào khai thác thường từ 20 đến 30 ngày (nếu thời tiết thuận lợi). Việt – Hàn có điều khoản bồi thường nếu chậm tiến độ cam kết.',
   },
   {
     q: 'Đất ven biển Hạ Long có làm sân thể thao được không?',
-    a: 'Hoàn toàn được. Khu vực Bãi Cháy, Hòn Gai, Tuần Châu thường có nền cát san lấp hoặc bùn ven biển. Kỹ sư của VietHan Sports sử dụng công nghệ trải vải địa kỹ thuật gia cường 2 lớp kết hợp lu lèn đá base phân tầng, giúp triệt tiêu nguy cơ sụt lún nứt gãy mặt sân.',
+    a: 'Hoàn toàn được. Khu vực Bãi Cháy, Hòn Gai, Tuần Châu thường có nền cát san lấp hoặc bùn ven biển. Kỹ sư của Việt – Hàn sử dụng công nghệ trải vải địa kỹ thuật gia cường 2 lớp kết hợp lu lèn đá base phân tầng, giúp triệt tiêu nguy cơ sụt lún nứt gãy mặt sân.',
   },
   {
     q: 'Sân Pickleball và Tennis ngoài trời có cần bảo dưỡng thường xuyên không?',
-    a: 'Sân pickleball và tennis ngoài trời dùng sơn phủ Acrylic đàn hồi cần quét dọn bụi cát hàng tuần và vệ sinh bề mặt định kỳ. VietHan Sports hỗ trợ kiểm tra định kỳ miễn phí 6 tháng/lần trong suốt thời hạn bảo hành 5 năm.',
+    a: 'Sân pickleball và tennis ngoài trời dùng sơn phủ Acrylic đàn hồi cần quét dọn bụi cát hàng tuần và vệ sinh bề mặt định kỳ. Việt – Hàn hỗ trợ kiểm tra định kỳ miễn phí 6 tháng/lần trong suốt thời hạn bảo hành 5 năm.',
   },
   {
     q: 'Chính sách thanh toán khi ký hợp đồng thi công như thế nào?',
@@ -121,7 +121,7 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Dịch Vụ Thi Công Sân Thể Thao – VietHan Sports | Chuẩn Hàn Quốc</title>
+        <title>Dịch Vụ Thi Công Sân Thể Thao – Việt – Hàn | Chuẩn Hàn Quốc</title>
         <meta 
           name="description" 
           content="Trọn gói tư vấn, thiết kế và thi công sân bóng đá cỏ nhân tạo, sân pickleball, tennis, bóng rổ tại Hạ Long, Quảng Ninh. Bảng giá minh bạch, bảo hành 5 năm." 
@@ -224,10 +224,10 @@ export default function Services() {
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs font-bold text-[#16A34A] uppercase tracking-widest">Chất lượng tạo khác biệt</span>
               <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                So sánh công nghệ VietHan Sports vs Thi công thông thường
+                So sánh công nghệ Việt – Hàn vs Thi công thông thường
               </h2>
               <p className="text-gray-500 mt-3 text-sm sm:text-base">
-                Tại sao các chủ sân bóng và resort hàng đầu Quảng Ninh luôn tin chọn VietHan Sports?
+                Tại sao các chủ sân bóng và resort hàng đầu Quảng Ninh luôn tin chọn Việt – Hàn?
               </p>
             </div>
 
@@ -239,7 +239,7 @@ export default function Services() {
                       <th className="p-5 font-bold text-gray-700 text-sm w-1/4">Hạng mục tiêu chuẩn</th>
                       <th className="p-5 font-black text-[#16A34A] text-base w-2/5 bg-green-50/60 border-x border-green-100">
                         <span className="flex items-center gap-2">
-                          <ShieldCheck size={20} /> VietHan Sports (Chuẩn Hàn Quốc)
+                          <ShieldCheck size={20} /> Việt – Hàn (Chuẩn Hàn Quốc)
                         </span>
                       </th>
                       <th className="p-5 font-bold text-gray-500 text-sm w-1/3">Thi công giá rẻ thông thường</th>

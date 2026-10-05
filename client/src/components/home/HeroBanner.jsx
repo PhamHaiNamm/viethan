@@ -169,7 +169,7 @@ export default function HeroBanner() {
           <div className="absolute inset-0 overflow-hidden">
             <img
               src={currentBanner?.image}
-              alt={currentBanner?.title || 'VietHan Sports'}
+              alt={currentBanner?.title || 'Việt – Hàn'}
               className="w-full h-full object-cover kenburns"
             />
           </div>

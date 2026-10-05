@@ -1,6 +1,6 @@
 /**
  * components/home/WhyUsSection.jsx
- * Section "Tại sao chọn VietHan Sports" – 6 lợi thế vượt trội trên nền tối sang trọng
+ * Section "Tại sao chọn Việt – Hàn" – 6 lợi thế vượt trội trên nền tối sang trọng
  */
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -72,7 +72,7 @@ export default function WhyUsSection() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-900/40 text-green-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 border border-green-700/50 shadow-sm">
             <Sparkles size={14} />
-            Tại sao chọn VietHan Sports?
+            Tại sao chọn Việt – Hàn?
           </span>
 
           <h2

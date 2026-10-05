@@ -139,7 +139,7 @@ export default function ContactFormSection() {
                   Gửi yêu cầu thành công!
                 </h3>
                 <p className="text-gray-500 text-base mb-8 max-w-md mx-auto leading-relaxed">
-                  Cảm ơn quý khách. Đội ngũ kỹ sư VietHan Sports sẽ liên hệ lại trực tiếp qua số điện thoại để tư vấn chi tiết trong 2 giờ làm việc.
+                  Cảm ơn quý khách. Đội ngũ kỹ sư Việt – Hàn sẽ liên hệ lại trực tiếp qua số điện thoại để tư vấn chi tiết trong 2 giờ làm việc.
                 </p>
                 <button
                   onClick={() => setSuccess(false)}
