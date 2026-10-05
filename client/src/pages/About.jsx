@@ -340,31 +340,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* ===== CTA SECTION ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-[#16A34A] to-[#15803D] text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-black mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Bạn đang tìm đối tác thi công sân thể thao uy tín?
-            </h2>
-            <p className="text-green-100 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
-              Đội ngũ kỹ sư Việt – Hàn sẵn sàng có mặt khảo sát thực địa miễn phí tại Hạ Long, Cẩm Phả, Uông Bí và toàn tỉnh Quảng Ninh trong 24 giờ.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                to="/lien-he"
-                className="px-8 py-4 bg-white text-[#16A34A] font-bold rounded-2xl shadow-xl hover:bg-green-50 transition-all flex items-center gap-2"
-              >
-                Nhận Báo Giá Miễn Phí <ArrowRight size={18} />
-              </Link>
-              <Link
-                to="/du-an"
-                className="px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white/10 transition-all"
-              >
-                Xem Các Công Trình Đã Làm
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Footer will render the floating CTA banner seamlessly */}
       </main>
     </>
   );

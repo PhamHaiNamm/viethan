@@ -285,7 +285,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex items-center justify-center gap-2 py-4 sm:py-5 rounded-2xl bg-gradient-to-r from-[#16A34A] to-[#22C55E] hover:from-[#15803D] hover:to-[#16A34A] text-white font-extrabold text-base tracking-wide hover:shadow-[0_10px_30px_rgba(22,163,74,0.4)] hover:scale-[1.01] active:scale-[0.99] transition-all disabled:opacity-60 cursor-pointer shadow-lg shadow-green-600/30"
+                    className="w-full flex items-center justify-center gap-2 py-4 sm:py-5 rounded-2xl bg-gradient-green text-white font-extrabold text-base tracking-wide hover:shadow-[0_10px_30px_rgba(22,163,74,0.4)] hover:scale-[1.01] active:scale-[0.99] transition-all disabled:opacity-60 cursor-pointer shadow-lg shadow-green-600/30"
                   >
                     {loading ? (
                       <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

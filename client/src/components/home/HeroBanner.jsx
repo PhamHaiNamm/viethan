@@ -221,7 +221,7 @@ export default function HeroBanner() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
             <Link
               to={currentBanner?.ctaLink || '/lien-he'}
-              className="px-8 py-4 sm:py-4.5 rounded-2xl bg-gradient-to-r from-[#16A34A] to-[#22C55E] hover:from-[#15803D] hover:to-[#16A34A] text-white font-extrabold text-base tracking-wide shadow-xl shadow-green-600/30 hover:scale-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2.5"
+              className="px-8 py-4 sm:py-4.5 rounded-2xl bg-gradient-green text-white font-extrabold text-base tracking-wide shadow-xl shadow-green-600/30 hover:scale-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2.5"
             >
               <span>{currentBanner?.ctaText || 'Nhận báo giá miễn phí'}</span>
               <ArrowRight size={18} />

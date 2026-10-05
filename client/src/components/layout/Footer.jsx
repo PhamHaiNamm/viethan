@@ -30,7 +30,13 @@ export default function Footer() {
 
       {/* ===== FLOATING CTA BANNER (THẺ ĐẢO NỔI SANG TRỌNG) ===== */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 sm:mb-20">
-        <div className="rounded-3xl bg-gradient-to-r from-[#16A34A] via-[#15803D] to-[#0E1712] p-8 sm:p-12 lg:p-14 shadow-[0_20px_50px_rgba(22,163,74,0.3)] border border-green-500/30 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+        <div
+          className="rounded-3xl p-8 sm:p-12 lg:p-14 shadow-[0_20px_50px_rgba(22,163,74,0.3)] border border-green-500/30 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden"
+          style={{
+            backgroundColor: '#16A34A',
+            backgroundImage: 'linear-gradient(135deg, #16A34A 0%, #15803D 50%, #0E1712 100%)',
+          }}
+        >
           {/* Hào quang nền nhẹ */}
           <div className="absolute right-0 top-0 w-80 h-80 bg-green-400/20 rounded-full blur-[100px] pointer-events-none" />
 

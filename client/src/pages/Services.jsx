@@ -331,7 +331,7 @@ export default function Services() {
             </p>
             <Link
               to="/lien-he"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#16A34A] to-[#22C55E] text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-xl"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-green text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-xl"
             >
               Yêu Cầu Thiết Kế & Báo Giá Miễn Phí <ArrowRight size={18} />
             </Link>

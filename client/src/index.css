@@ -104,6 +104,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background-clip: text;
 }
 
+/* Bulletproof gradient backgrounds for buttons & cards across all mobile browsers */
+.bg-gradient-green {
+  background-color: #16A34A;
+  background-image: linear-gradient(135deg, #16A34A 0%, #22C55E 100%);
+}
+
+.bg-gradient-cta {
+  background-color: #16A34A;
+  background-image: linear-gradient(135deg, #16A34A 0%, #15803D 50%, #0E1712 100%);
+}
+
 /* Nút phát sáng có nhịp thở (Pulse Glow) */
 .btn-glow {
   box-shadow: 0 0 24px rgba(34, 197, 94, 0.45);
