@@ -72,10 +72,10 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>Về chúng tôi – Việt – Hàn | Chuẩn Thi Công Hàn Quốc</title>
+        <title>Về chúng tôi – VIỆT - HÀN | Chuẩn Thi Công Hàn Quốc</title>
         <meta 
           name="description" 
-          content="Tìm hiểu Công ty Việt – Hàn – Đơn vị tiên phong thi công sân thể thao chuẩn Hàn Quốc tại Hạ Long, Quảng Ninh. Đội ngũ chuyên gia Hàn-Việt, bảo hành 5 năm." 
+          content="Tìm hiểu Công ty VIỆT - HÀN – Đơn vị tiên phong thi công sân thể thao chuẩn Hàn Quốc tại Hạ Long, Quảng Ninh. Đội ngũ chuyên gia Hàn-Việt, bảo hành 5 năm." 
         />
       </Helmet>
 
@@ -94,7 +94,7 @@ export default function About() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-900/40 text-green-400 text-sm font-semibold mb-6 border border-green-700/50"
             >
               <Sparkles size={16} />
-              Về Chúng Tôi – Công Ty Việt – Hàn
+              Về Chúng Tôi – Công Ty VIỆT - HÀN
             </motion.div>
 
             <motion.h1

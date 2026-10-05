@@ -69,10 +69,10 @@ export default function Footer() {
                 <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
               </div>
               <div>
-                <div className="font-black text-white text-xl tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                  Việt – <span className="text-[#22C55E]">Hàn</span>
+                <div className="font-black text-white text-xl tracking-tight leading-none uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                  VIỆT – <span className="text-[#22C55E]">HÀN</span>
                 </div>
-                <div className="text-[11px] text-gray-400 mt-1">Việt – Hàn • Chuẩn FIFA Quốc Tế</div>
+                <div className="text-[11px] text-gray-400 mt-1 uppercase tracking-wider">VIỆT – HÀN • Chuẩn FIFA Quốc Tế</div>
               </div>
             </Link>
 

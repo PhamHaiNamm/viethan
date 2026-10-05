@@ -72,7 +72,7 @@ export default function WhyUsSection() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-900/40 text-green-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 border border-green-700/50 shadow-sm">
             <Sparkles size={14} />
-            Tại sao chọn Việt – Hàn?
+            Tại sao chọn VIỆT - HÀN?
           </span>
 
           <h2

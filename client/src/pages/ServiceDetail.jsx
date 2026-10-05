@@ -104,7 +104,7 @@ export default function ServiceDetail() {
   return (
     <>
       <Helmet>
-        <title>{svc.metaTitle || `${svc.title} – Việt – Hàn`}</title>
+        <title>{svc.metaTitle || `${svc.title} – VIỆT - HÀN`}</title>
         <meta name="description" content={svc.metaDescription || svc.summary} />
       </Helmet>
 

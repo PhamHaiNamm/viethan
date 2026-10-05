@@ -41,8 +41,8 @@ export default function AdminLogin() {
           <div className="w-20 h-20 rounded-3xl overflow-hidden bg-white flex items-center justify-center p-1 mx-auto mb-4 shadow-xl border border-white/20">
             <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-2xl font-black text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            Việt – <span className="text-[#22C55E]">Hàn</span>
+          <h1 className="text-2xl font-black text-white uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            VIỆT – <span className="text-[#22C55E]">HÀN</span>
           </h1>
           <p className="text-gray-400 text-sm mt-1">Trang quản trị nội dung</p>
         </div>

@@ -38,8 +38,8 @@ export default function AdminLayout() {
             <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
           </div>
           {sidebarOpen && (
-            <span className="font-black text-white text-sm" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Việt – Hàn <span className="text-[#22C55E]">Admin</span>
+            <span className="font-black text-white text-sm uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              VIỆT – HÀN <span className="text-[#22C55E]">ADMIN</span>
             </span>
           )}
           <button

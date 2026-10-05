@@ -59,7 +59,7 @@ export default function BlogDetail() {
   return (
     <>
       <Helmet>
-        <title>{post.metaTitle || `${post.title} – Việt – Hàn`}</title>
+        <title>{post.metaTitle || `${post.title} – VIỆT - HÀN`}</title>
         <meta name="description" content={post.metaDescription || post.excerpt} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
@@ -97,7 +97,7 @@ export default function BlogDetail() {
 
               <span className="flex items-center gap-2">
                 <UserCheck size={15} className="text-[#22C55E]" />
-                Tác giả: <strong className="text-white">{post.authorName || 'Ban Chuyên Môn Việt – Hàn'}</strong>
+                Tác giả: <strong className="text-white">{post.authorName || 'Ban Chuyên Môn VIỆT - HÀN'}</strong>
               </span>
             </div>
           </div>

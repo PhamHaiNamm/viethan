@@ -77,7 +77,7 @@ export default function TestimonialsSection() {
             className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            Chủ đầu tư nói gì về <span className="gradient-text">Việt – Hàn</span>
+            Chủ đầu tư nói gì về <span className="gradient-text">VIỆT - HÀN</span>
           </h2>
         </motion.div>
 

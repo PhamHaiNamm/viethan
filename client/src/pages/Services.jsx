@@ -121,7 +121,7 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Dịch Vụ Thi Công Sân Thể Thao – Việt – Hàn | Chuẩn Hàn Quốc</title>
+        <title>Dịch Vụ Thi Công Sân Thể Thao – VIỆT - HÀN | Chuẩn Hàn Quốc</title>
         <meta 
           name="description" 
           content="Trọn gói tư vấn, thiết kế và thi công sân bóng đá cỏ nhân tạo, sân pickleball, tennis, bóng rổ tại Hạ Long, Quảng Ninh. Bảng giá minh bạch, bảo hành 5 năm." 
@@ -224,10 +224,10 @@ export default function Services() {
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs font-bold text-[#16A34A] uppercase tracking-widest">Chất lượng tạo khác biệt</span>
               <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                So sánh công nghệ Việt – Hàn vs Thi công thông thường
+                So sánh công nghệ VIỆT - HÀN vs Thi công thông thường
               </h2>
               <p className="text-gray-500 mt-3 text-sm sm:text-base">
-                Tại sao các chủ sân bóng và resort hàng đầu Quảng Ninh luôn tin chọn Việt – Hàn?
+                Tại sao các chủ sân bóng và resort hàng đầu Quảng Ninh luôn tin chọn VIỆT - HÀN?
               </p>
             </div>
 
@@ -239,7 +239,7 @@ export default function Services() {
                       <th className="p-5 font-bold text-gray-700 text-sm w-1/4">Hạng mục tiêu chuẩn</th>
                       <th className="p-5 font-black text-[#16A34A] text-base w-2/5 bg-green-50/60 border-x border-green-100">
                         <span className="flex items-center gap-2">
-                          <ShieldCheck size={20} /> Việt – Hàn (Chuẩn Hàn Quốc)
+                          <ShieldCheck size={20} /> VIỆT - HÀN (Chuẩn Hàn Quốc)
                         </span>
                       </th>
                       <th className="p-5 font-bold text-gray-500 text-sm w-1/3">Thi công giá rẻ thông thường</th>

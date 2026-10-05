@@ -81,8 +81,8 @@ export default function Navbar() {
               <img src="/logo.jpg" alt="Việt – Hàn" className="w-full h-full object-contain" />
             </div>
             <div>
-              <div className="font-black text-white text-xl sm:text-2xl tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                Việt – <span className="text-[#22C55E]">Hàn</span>
+              <div className="font-black text-white text-xl sm:text-2xl tracking-tight leading-none uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                VIỆT – <span className="text-[#22C55E]">HÀN</span>
               </div>
               <div className="text-[10px] sm:text-xs text-green-400 font-semibold tracking-wider uppercase mt-1 flex items-center gap-1.5">
                 <span>🇰🇷 Chuẩn Hàn Quốc</span>

@@ -58,10 +58,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Liên Hệ & Báo Giá Thi Công – Việt – Hàn Hạ Long</title>
+        <title>Liên Hệ & Báo Giá Thi Công – VIỆT - HÀN Hạ Long</title>
         <meta
           name="description"
-          content="Liên hệ tư vấn, khảo sát thực địa miễn phí và nhận báo giá thi công sân bóng đá cỏ nhân tạo, pickleball, tennis của Công ty Việt – Hàn tại Hạ Long, Quảng Ninh. Hotline 24/7."
+          content="Liên hệ tư vấn, khảo sát thực địa miễn phí và nhận báo giá thi công sân bóng đá cỏ nhân tạo, pickleball, tennis của Công ty VIỆT - HÀN tại Hạ Long, Quảng Ninh. Hotline 24/7."
         />
       </Helmet>
 
@@ -99,7 +99,7 @@ export default function Contact() {
               <div>
                 <span className="text-xs font-bold text-[#16A34A] uppercase tracking-widest block mb-2">Trụ sở chính</span>
                 <h2 className="text-3xl font-black text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                  Công ty Việt – Hàn tại Hạ Long, Quảng Ninh
+                  Công ty VIỆT - HÀN tại Hạ Long, Quảng Ninh
                 </h2>
 
                 <div className="space-y-4">

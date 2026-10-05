@@ -33,10 +33,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Việt – Hàn – Thi công sân thể thao chuẩn Hàn Quốc tại Hạ Long, Quảng Ninh</title>
-        <meta name="description" content="Việt – Hàn chuyên tư vấn, thiết kế và thi công sân bóng đá cỏ nhân tạo, tennis, pickleball, bóng rổ, cầu lông tại Hạ Long, Quảng Ninh. Chuẩn Hàn Quốc. Bảo hành 5 năm." />
+        <title>VIỆT - HÀN – Thi công sân thể thao chuẩn Hàn Quốc tại Hạ Long, Quảng Ninh</title>
+        <meta name="description" content="VIỆT - HÀN chuyên tư vấn, thiết kế và thi công sân bóng đá cỏ nhân tạo, tennis, pickleball, bóng rổ, cầu lông tại Hạ Long, Quảng Ninh. Chuẩn Hàn Quốc. Bảo hành 5 năm." />
         <meta name="keywords" content="thi công sân cỏ nhân tạo Hạ Long, sân bóng đá Quảng Ninh, sân pickleball, sân tennis, Việt Hàn" />
-        <meta property="og:title" content="Việt – Hàn – Thi công sân thể thao chuẩn Hàn Quốc" />
+        <meta property="og:title" content="VIỆT - HÀN – Thi công sân thể thao chuẩn Hàn Quốc" />
         <meta property="og:description" content="Chuyên gia tư vấn, thiết kế và thi công sân thể thao Việt–Hàn tại Hạ Long, Quảng Ninh." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://viethansports.vn" />

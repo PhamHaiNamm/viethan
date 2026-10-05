@@ -81,7 +81,7 @@ export default function ProjectDetail() {
   return (
     <>
       <Helmet>
-        <title>{project.metaTitle || `${project.title} – Việt – Hàn`}</title>
+        <title>{project.metaTitle || `${project.title} – VIỆT - HÀN`}</title>
         <meta name="description" content={project.metaDescription || project.description} />
       </Helmet>
 
