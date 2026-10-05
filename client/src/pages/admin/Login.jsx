@@ -38,8 +38,8 @@ export default function AdminLogin() {
       >
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#22C55E] to-[#16A34A] flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <span className="text-white font-black text-2xl">V</span>
+          <div className="w-20 h-20 rounded-3xl overflow-hidden bg-white flex items-center justify-center p-1 mx-auto mb-4 shadow-xl border border-white/20">
+            <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-2xl font-black text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             VietHan<span className="text-[#22C55E]">Sports</span>

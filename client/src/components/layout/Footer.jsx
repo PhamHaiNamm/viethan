@@ -65,8 +65,8 @@ export default function Footer() {
           {/* CỘT 1: THÔNG TIN CÔNG TY (4 cols) */}
           <div className="lg:col-span-4 space-y-5">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#22C55E] to-[#16A34A] flex items-center justify-center shadow-lg">
-                <span className="text-white font-black text-xl">V</span>
+              <div className="w-12 h-12 rounded-2xl overflow-hidden bg-white flex items-center justify-center p-0.5 shadow-lg">
+                <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="font-black text-white text-xl tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>

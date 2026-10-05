@@ -77,8 +77,8 @@ export default function Navbar() {
 
           {/* ===== LOGO ===== */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-[#22C55E] to-[#16A34A] flex items-center justify-center shadow-lg shadow-green-500/30 group-hover:scale-105 transition-all">
-              <span className="text-white font-black text-xl tracking-tighter">V</span>
+            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden bg-white flex items-center justify-center p-0.5 shadow-lg shadow-green-500/20 group-hover:scale-105 transition-all">
+              <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
             </div>
             <div>
               <div className="font-black text-white text-xl sm:text-2xl tracking-tight leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>

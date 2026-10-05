@@ -34,8 +34,8 @@ export default function AdminLayout() {
       <aside className={`${sidebarOpen ? 'w-64' : 'w-16'} transition-all duration-300 bg-[#0B1410] flex flex-col shrink-0 relative`}>
         {/* Logo */}
         <div className="h-16 flex items-center gap-2 px-4 border-b border-white/5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#22C55E] to-[#16A34A] flex items-center justify-center shrink-0">
-            <span className="text-white font-black text-sm">V</span>
+          <div className="w-8 h-8 rounded-lg overflow-hidden bg-white flex items-center justify-center p-0.5 shrink-0 shadow-sm">
+            <img src="/logo.jpg" alt="VietHan Sports" className="w-full h-full object-contain" />
           </div>
           {sidebarOpen && (
             <span className="font-black text-white text-sm" style={{ fontFamily: 'Montserrat, sans-serif' }}>
