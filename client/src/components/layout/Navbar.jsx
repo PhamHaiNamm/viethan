@@ -68,8 +68,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#080E0B]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.5)] py-2 sm:py-3'
-          : 'bg-gradient-to-b from-[#080E0B]/80 via-[#080E0B]/40 to-transparent py-4 sm:py-5'
+          ? 'bg-[#080E0B]/95 backdrop-blur-xl border-b border-green-500/20 shadow-[0_10px_30px_rgba(0,0,0,0.6)] py-2 sm:py-2.5'
+          : 'bg-[#080E0B]/90 backdrop-blur-lg border-b border-white/10 shadow-[0_4px_25px_rgba(0,0,0,0.4)] py-3 sm:py-4'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,7 +101,7 @@ export default function Navbar() {
                     <button
                       onClick={() => setDropdown((p) => (p === link.label ? null : link.label))}
                       onMouseEnter={() => setDropdown(link.label)}
-                      className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-bold text-gray-200 hover:text-white transition-colors rounded-xl hover:bg-white/5"
+                      className="flex items-center gap-1.5 px-4 py-2 text-sm font-bold text-gray-200 hover:text-white transition-colors rounded-xl hover:bg-white/10"
                     >
                       {link.label}
                       <ChevronDown
@@ -145,10 +145,10 @@ export default function Navbar() {
                     to={link.to}
                     end={link.to === '/'}
                     className={({ isActive }) =>
-                      `block px-4 py-2.5 text-sm font-bold rounded-xl transition-all ${
+                      `block px-4 py-2 text-sm font-bold rounded-xl transition-all ${
                         isActive
-                          ? 'text-[#22C55E] bg-green-950/40 shadow-sm border border-green-500/20'
-                          : 'text-gray-200 hover:text-white hover:bg-white/5'
+                          ? 'text-white bg-[#16A34A] shadow-md shadow-green-600/30'
+                          : 'text-gray-200 hover:text-white hover:bg-white/10'
                       }`
                     }
                   >
@@ -176,7 +176,7 @@ export default function Navbar() {
 
             <Link
               to="/lien-he"
-              className="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#16A34A] to-[#22C55E] text-white text-xs font-black uppercase tracking-wider hover:shadow-[0_0_25px_rgba(34,197,94,0.5)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+              className="px-5 py-2.5 rounded-full bg-gradient-green text-white text-xs font-black uppercase tracking-wider hover:shadow-[0_0_25px_rgba(34,197,94,0.5)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
             >
               Báo giá ngay <ArrowRight size={14} />
             </Link>
